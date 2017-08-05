@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!---for IE compatibility--->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!---this meta tag is used for RWD--->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Where's Abay -- Adam Yu's Portfolio</title>
+        <!--- Bootstrap --->
+        <link href=css/bootstrap.min.css rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>  
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/slides.js"></script>
+    </head>
+    <body>
+        <!--- start of navbar --->
+        <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!--- Brand and toggle for mobile display --->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="Adamlogo" class="navbar-brand" href="index.html"><img src="image/Adamlogo.png"><span>ADAM YU</span></a>
+                </div>
+             <!--- nav links --->
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul id="nav-list" class="nav navbar-nav">
+                        <li><a href="work.html">WORKS</a></li>
+                        <li><a href="CV.pdf">CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <!--- end of navbar --->
+        
+        <!--- start of article --->
+        
+        <div id="start" class="article">
+        
+            <h1>Tasklister</h1>
+            
+            <h3>Web Application Interface Prototype Design</h3>
+            
+            <!---This area is the slideshow for mobile display--->
+            <div class="w3-content w3-display-container hidden-sm hidden-md hidden-lg">
+                <img class="slides" src="image/tasklister/default%20view.jpg"/>
+                <img class="slides" src="image/tasklister/gantt.jpg"/>
+                <img class="slides" src="image/tasklister/task%20inspect.jpg"/>
+                <img class="slides" src="image/tasklister/edit.jpg"/>
+                <img class="slides" src="image/tasklister/tagview.jpg"/>
+                <img class="slides" src="image/tasklister/saved.jpg"/>
+                <img class="slides" src="image/tasklister/Tasklister_Lofi_1.jpg"/>
+                <img class="slides" src="image/tasklister/Tasklister_Lofi_2.jpg"/>
+                <img class="slides" src="image/tasklister/Tasklister_Lofi_3.jpg"/>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                </div>
+                <p class="caption">Landing page</p>
+                <p class="caption">Gantt view</p>
+                <p class="caption">Task inspection</p>
+                <p class="caption">Edit view</p>
+                <p class="caption">Tag view</p>
+                <p class="caption">Saving alert</p>
+                <p class="caption">Low fidelity prototype</p>
+                <p class="caption">Low fidelity prototype</p>
+                <p class="caption">Low fidelity prototype</p>
+            </div>
+            <!------>
+
+            
+            <p>
+            <figure>
+                    <img id="TaskDefault" class="a-img floatright" src="image/tasklister/default%20view.jpg" />
+                    <figcaption class="floatright">Figure 1. Landing page of Tasklister</figcaption>
+            </figure>
+            </p>
+            <p>
+            This is the individual assignment of HCI course in Nanyang Technological University in Singapore. In this course, I am requested to follow the Shneiderman's Eight Golden Rules of Interface Design to complete a user interface of a task list application. A set of functionalities are required to achieve in the interface design. The final product is a low fidelity sketch and a high fidelity prototype made by PowerPoint.
+            </p>
+            
+            <h3>Interface Features</h3>
+            
+            <p>
+            This interface contains three views: task view, tag view and trash can. In the task view, current tasks are listed out in a hierarchy way. Users can inspect a certain task by clicking on the task bar and mark the task as complete by clicking the light bulb at the front of each task. Other allowable actions are adding a new task, dragging a task into the trash bin and editing a specific task. When users click on the switch panel on the top, and Gantt chart of tasks will show up. Users can choose whether to show the dependencies of tasks by selecting the checkbox “show dependencies.”    
+            </p>
+            
+            <figure class="centeredimgs">
+                    <img id="Taskgantt" class="a-img" src="image/tasklister/gantt.jpg" />
+                    <img id="Taskinspect" class="a-img" src="image/tasklister/task%20inspect.jpg"/>
+                    <figcaption>Figure 2. Gantt view and task inspection</figcaption>
+            </figure>
+            
+            <p>
+            In the tag view, user can manage their self-defined tags they attached to their tasks. By clicking the tag name, the tasks currently having this tag will show up at the right hand side. Users can simply add this tag to other task by the selection menu below.
+            </p>
+            
+            <figure class="centeredimgs">
+                    <img id="Tasktag" class="a-img" src="image/tasklister/tagview.jpg" />
+                    <img id="Taskedit" class="a-img" src="image/tasklister/edit.jpg" />
+                    <figcaption>Figure 3. Tag view and edit view</figcaption>
+            </figure>
+            
+            <p>
+            In the trash can, similar to the tag view, users can manage the deleted tasks. Users can choose to recover a task or delete the task forever. A dialog will pop up for confirmation to prevent users from mis-clicking the “delete forever” button.
+            </p>
+            
+            <h3>Shneiderman's Eight Golden Rules</h3>
+            
+            <p>In this section, I will illustrate how I implement Shneiderman’s eight golden rules of interaction design in my application.</p>
+            
+            <ol>
+                <li>Strive for consistency: the application has a consistent visual layout: a side menu and an upper bar. The color scheme is blue.</li>
+                <li>Cater to universal usability: it provides feature that allow users to change text language and text size display.</li>
+                <li>Offer informative feedback: it provides feedback as users complete an action, such as a dialog will pop out when users save a task. </li>
+                <li>Design dialogs to yield closure: user will see a dialog when an action is completed.</li>
+                <li>Permit easy reversal of actions: trash can feature allows users to reverse the ‘delete’ action.</li>
+                <li>Support internal locus of control: it allows users to decide on which page they want to be in.</li>
+                <li>Reduce short term memory load: actions to enter data and retrieve data are simple so users do not need to remember much steps.</li>
+                <li>Prevent errors: There is an alert when users do not save a task before clicking the ‘back’ button after they have added or changed the content.</li>
+            </ol>
+            
+            <h3>Reflection</h3>
+            
+            <p>In this assignment, there’s more effort put into the detailed design of the user interface. It was nice to know that there are so many details to cater when designing an interface. The eight golden rules help a lot as a reminder for me. However, I feel this assignment is still too specific. The joy of discovering problem and finding solution was taken away since all the requirements were set already.</p>
+            
+            <p>
+                <figure class="centeredimgs">
+                    <img class="a-img Tasklofi" src="image/tasklister/Tasklister_Lofi_1.jpg" />
+                    <img class="a-img Tasklofi" src="image/tasklister/Tasklister_Lofi_2.jpg" />
+                    <img class="a-img Tasklofi" src="image/tasklister/Tasklister_Lofi_3.jpg" />
+                    <figcaption>Figure 4. Low fidelity design</figcaption>
+                </figure>
+            </p>
+            
+            <a href="#navbar"><button id="top-btn">Back to Top</button></a>
+            <a href="index.html"><button id="back-btn">Back to Homepage</button></a>
+        </div>
+        <!--- end of article --->
+  
+        <!--- start of footer --->
+            
+        <footer class="container-fluid" id="footer" >
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>Contact</h4>
+                    <p>Email: b02106020@ntu.edu.tw</p>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>Location</h4>
+                    <p>Taipei, Taiwan</p>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>　</h4>
+                    <p id="loyalty">@2017 Adam Yu Tzu Hsien</p>
+                </div>
+                
+            </div>
+        </footer>
+        <!--- end of footer ---> 
+            </body>
+        </html>

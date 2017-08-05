@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!---for IE compatibility--->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!---this meta tag is used for RWD--->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adam Yu's Portfolio</title>
+        <!--- Bootstrap --->
+        <link href=css/bootstrap.min.css rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <!--- start of navbar --->
+        <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!--- Brand and toggle for mobile display --->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="Adamlogo" class="navbar-brand" href="#"><img src="image/Adamlogo.png"><span>ADAM YU</span></a>
+                </div>
+             <!--- nav links --->
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul id="nav-list" class="nav navbar-nav">
+                        <li><a href="work.html">WORKS</a></li>
+                        <li><a href="CV.pdf">CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <!--- end of navbar --->
+        
+        <!--- start of article --->
+        
+        <article id="homebackground">
+            <div class="greeting">
+                
+                <img class="backgroundimg hidden-xs" src="image/homepage%201280x700%20(ratio).jpg" alt="homepage">
+                <img class="backgroundimg hidden-sm hidden-md hidden-lg" src="image/homepage%20375x607%20(ratio).jpg" alt="homepage">
+                
+                <div class="greeting-text">
+                    <h1 id="hi">Hi, I'm Adam Yu.</h1>
+                    <p id="intro">
+                        <span>I'm a UX learner based in Taipei, Taiwan.</span><br/>
+                        <span>Most of the time I enjoy myself being alone,</span><br/>
+                        <span>but when it comes to User Experience,</span><br/>
+                        <span>I can never be more passionate.</span>
+                    </p>
+                    <a href="#projects"><button id="see-btn">see my work</button></a>
+                </div>
+            </div>
+            
+            <div class="works container-fluid">
+                
+                <div>
+                    <h2>Projects</h2>
+                </div>
+                
+                <div id="projects" class="row workrow">
+                
+                    <a href="WheresAbay.html">
+                    <div class="work col-xs-12 col-md-4">
+                        <img src="image/wheresabay.jpg">
+                        <h3>Where's Abay</h3>
+                        <p>Mobile Application Prototype Design</p>
+                    </div>
+                    </a>
+                    
+                    <a href="TaiwanRailway.html">
+                    <div class="work col-xs-12 col-md-4">
+                        <img src="image/taiwanrailway.jpg">
+                        <h3>Taiwan Railway</h3>
+                        <p>Information Architecture &amp; Website Redesign</p>
+                    </div>
+                    </a>
+                    
+                    <a href="Tasklister.html">
+                    <div class="work col-xs-12 col-md-4">            
+                        <img src="image/tasklister.jpg">
+                        <h3>Tasklister</h3>
+                        <p>Web Application Prototype Design</p>
+                    </div>
+                    </a>
+                    
+                </div>
+                
+                <div id="more">
+                    <h3>More works coming up.......</h3>
+                </div>
+                
+            </div>
+            
+        </article>
+        
+        <!--- end of article --->
+        
+        <!--- start of footer --->
+        <footer class="container-fluid" id="footer" >
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>Contact</h4>
+                    <p>Email: b02106020@ntu.edu.tw</p>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>Location</h4>
+                    <p>Taipei, Taiwan</p>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>　</h4>
+                    <p id="loyalty">@2017 Adam Yu Tzu Hsien</p>
+                </div>
+                
+            </div>
+        </footer>
+        <!--- end of footer --->
+    </body>
+</html>

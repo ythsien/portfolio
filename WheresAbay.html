@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!---for IE compatibility--->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!---this meta tag is used for RWD--->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--- important part --->
+        <title>Where's Abay -- Adam Yu's Portfolio</title>
+        <!--- Bootstrap --->
+        <link href=css/bootstrap.min.css rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/slides.js"></script>
+    </head>
+    <body>
+        <!--- start of navbar --->
+        <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!--- Brand and toggle for mobile display --->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="Adamlogo" class="navbar-brand" href="index.html"><img src="image/Adamlogo.png"><span>ADAM YU</span></a>
+                </div>
+             <!--- nav links --->
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul id="nav-list" class="nav navbar-nav">
+                        <li><a href="work.html">WORKS</a></li>
+                        <li><a href="CV.pdf">CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <!--- end of navbar --->
+        
+        <!--- start of article --->
+        
+        <div id="start" class="article">
+        
+            <h1>Where's Abay</h1>
+            <p>
+            <figure>
+                    <img id="abayapp" class="a-img floatright" src="image/wheresabay/app%20store.jpg" />
+                    <figcaption class="floatright">Figure 1. Demostration of App store</figcaption>
+            </figure>
+            </p>
+            <h3>Mobile Application Prototype Design</h3>
+            
+            <!---This area is the slideshow for mobile display--->
+            <div class="w3-content w3-display-container hidden-sm hidden-md hidden-lg">
+                <img class="slides" src="image/wheresabay/app%20store.jpg"/>
+                <img class="slides" src="image/wheresabay/low%20fi%20sketch.jpg">
+                <img class="slides" src="image/wheresabay/scenario.jpg">
+                <img class="slides" src="image/wheresabay/persona.jpg">
+                <img class="slides" src="image/wheresabay/testing.jpg">
+                <img class="slides" src="image/wheresabay/1.jpg">
+                <img class="slides" src="image/wheresabay/2.jpg">
+                <img class="slides" src="image/wheresabay/3.jpg">
+                <img class="slides" src="image/wheresabay/4.jpg">
+                <img class="slides" src="image/wheresabay/5.jpg">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                </div>
+                <p class="caption">Demostration of App store</p>
+                <p class="caption">Low fidelity prototype</p>
+                <p class="caption">User scenario</p>
+                <p class="caption">User persona</p>
+                <p class="caption">User testing</p>
+                <p class="caption">High fidelity prototype</p>
+                <p class="caption">High fidelity prototype</p>
+                <p class="caption">High fidelity prototype</p>
+                <p class="caption">High fidelity prototype</p>
+                <p class="caption">High fidelity prototype</p>
+            </div>
+            <!------>
+            
+            <p>
+            "Where's Abay" is a student group project for the Human-Computer Interaction course. This application is designed for National Taiwan University (NTU) students with the purpose of the following:
+            </p>
+            <ol>
+                <li>Track the location of the "Abay" (bike-towing truck)</li>
+                <li>Find their bicycles quickly</li>
+                <li>Find less-crowded parking space</li>
+            </ol>   
+            <p>
+                <figure>
+                <img src="image/wheresabay/persona.jpg" id="abaypersona" class="a-img floatright" />
+                <figcaption class="floatright">Figure 2. User persona</figcaption>
+                </figure>
+                <strong>User Research &amp; Defining Problem</strong>
+            </p>
+            <p>
+                Almost every NTU student owns a bicycle and many of them have suffered from the inconvenience of over-crowded parking space and sometimes bicycle being towed. We interviewed 8 NTU students having the above experience and observed the fieldwork. We discovered that: 
+            </p>
+            <ol>
+                <li>Students will choose to park illegally in the rush hour</li>
+                <li>Most students are worried about thier bikes being towed when they park illegally</li>
+                <li>They will feel upset if their bikes are towed</li>
+            </ol>
+            <p>Hence, we define our problem as "how to let students park their bikes without being worried."</p>
+            <p>
+                <figure>
+                <img src="image/wheresabay/scenario.jpg" id="abayscenario" class="a-img floatright" />
+                <figcaption class="floatright">Figure 3. User scenario</figcaption>
+                </figure>
+            <strong>Persona &amp; Scenario</strong>
+            </p>
+            <p>To aid in the design and development, we developed one persona, a typical NTU student and drafted out a task scenario. The goals of our persona include: </p>
+            <ol>
+                <li>Avoid towing truck when parking illegally</li>
+                <li>Avoid forgetting when he parked his bike</li>
+            </ol>
+            <p><strong>Ideation</strong></p>
+            <p>In this application, users will firstly enter a login page, where users can log in with their student ID and password, which will be pre-registered at NTU system. If the user is a first timer, a instruction will show up. The interface is very simple so that users can quickly access the location of their bicycles and "Abay"; as a result, we make the interface resemble Google Map to be intuitive and familiar.  The location of the user's bike will be represented with a blue dot, which also resembles google map. And the location of the towing truck will be represented with the icon of "Abay" with multiple layers of translucent radius.</p>
+                
+            <figure>
+                <img src="image/wheresabay/low%20fi%20sketch.jpg" id="abaylow" class="a-img floatright" />
+                <figcaption class="floatright">Figure 4. Low fidelity prototype</figcaption>
+            </figure>
+        
+            <p>
+                Then we come up the idea of a notification system in our application. When the towing truck is approaching the user's bike (when the radius reaches the blue dot), the application will notify the user. Besides, we add brown color blocks with different layer of darkness on the map to indicate the density of a parking area. Users will easily get the idea of where to find less-crowded places.
+            </p>
+            <p><strong>Iteration</strong></p>
+            <p>After drafting our first low fidelity prototype, we invited 2 classmates for testing. We modified the features in our high fidelity prototype as the following: </p>
+            
+            <ol>
+                <li>Modify the notification system into three mode:  normal, vibrating and mute</li>
+                <li>Modify the pop out window to be a step-by-step instruction</li>
+                <li>Add a new function to relocate map</li>
+            </ol>
+            
+            <figure id="abays">
+                <img src="image/wheresabay/1.jpg" class="a-img abays1" />
+                <img src="image/wheresabay/2.jpg" class="a-img abays1" />
+                <img src="image/wheresabay/3.jpg" class="a-img abays1" />
+                <img src="image/wheresabay/4.jpg" class="a-img abays1" />
+                <figcaption>Figure 5. High fidelity prototypes</figcaption>
+            </figure>
+            
+            <p>These decision were made because of the following feedback we received:</p>            
+            
+            <ol>
+                <li>There will be occasions that users don't want to be disturbed by the notification or just don't want it to make sounds.</li>
+                <li>During the testing, we discovered that user either ignore the pop out window or do not read the instruction as we expected.</li>
+                <li>User would drag the map and wonder if there is a quick way to relocate the map.</li>
+            </ol>
+            <p>Also, we found that users don't expect other new functions such as gamification.</p>
+            <p><strong>Recap &amp; Reflection</strong></p>
+            <p>In this project, we have run through a simple UX process: user research, defining problem, persona, low fidelity prototype, user testing, and high fidelity prototype. The process is interesting, yet we need to admit that it's imperfect. Many of the detail design decisions are made without fully consideration and there ought to be more iterations. Most importantly, we didn't consider much about the feasibility of the solution and whether this solution is acceptable to the general public.</p>
+            
+            <a href="#navbar"><button id="top-btn">Back to Top</button></a>
+            <a href="index.html"><button id="back-btn">Back to Homepage</button></a>
+            
+            
+
+        </div>        
+        
+        <!--- end of article --->
+        
+        <!--- start of footer --->
+        <footer class="container-fluid" id="footer" >
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>Contact</h4>
+                    <p>Email: b02106020@ntu.edu.tw</p>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>Location</h4>
+                    <p>Taipei, Taiwan</p>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>　</h4>
+                    <p id="loyalty">@2017 Adam Yu Tzu Hsien</p>
+                </div>
+                
+            </div>
+        </footer>
+        <!--- end of footer --->
+        
+    </body>
+</html>
