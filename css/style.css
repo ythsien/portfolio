@@ -15,6 +15,152 @@ body {
     padding-right: 10%;
 }
 
+/* loader animation */
+
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #202020;
+    z-index: 1000;
+}
+
+#loader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 40%;
+}
+
+#loader img {
+    max-height: 180px;
+    max-width: 180px;
+}
+
+#loader-text {
+    position: relative;
+    text-align: center;
+    z-index: 1005;
+    top: 170px;
+}
+
+#loader-back {
+    position: absolute;
+    z-index: 1001;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#loader-plane {
+    position: absolute;
+    z-index: 1002;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#loader-name {
+    position: absolute;
+    z-index: 1003;
+    left: 50px;
+    right: 0;
+    margin: auto;
+    top: 30px;
+}
+
+/* animation code */
+
+@keyframes loader-plane {
+    0% {
+        max-width: 180px;
+        top: 0px;
+    }
+    25% {
+        max-width: 50px;
+        top: 70px;
+        right: 0px;
+    }
+    50% {
+        max-width: 50px;
+        top: 0px;
+        right: 120px;
+    }
+    50.0001% {
+        max-width: 50px;
+        top: 140px;
+        right: -120px;
+    }
+    100% {
+        max-width: 180px;
+        top: 0px;
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes loader-name {
+    25% {
+        right: 60px;
+        top: 100px;
+        opacity: 0;
+        max-height: 12px;
+    }
+    75% {opacity: 0;}
+    100% {
+        right: 0px;
+        opacity: 1;}
+}
+
+#loader-plane {
+    animation-name: loader-plane;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+#loader-name {
+    animation-name: loader-name;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+/* ------- */
+
+#loader img {
+    max-height: 180px;
+    max-width: 180px;
+}
+
+#loader p {
+    color: #F2F2F2;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+/* Loaded */
+
+.loaded #loader-wrapper {
+    opacity: 0;
+    -webkit-transition: all 1s ease-out; 
+            transition: all 1s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+
+/* end of loader animation */
+
 /* start of navbar css */
 
 nav * {
