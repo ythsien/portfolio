@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!---for IE compatibility--->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!---this meta tag is used for RWD--->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ND Handshaking Event Design -- Adam Yu's Portfolio</title>
+        <!--- Bootstrap --->
+        <link href=css/bootstrap.min.css rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/slides.js"></script>
+    </head>
+    <body>
+        <!--- start of navbar --->
+        <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!--- Brand and toggle for mobile display --->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="Adamlogo" class="navbar-brand" href="index.html"><img src="image/Adamlogo.png"><span>ADAM YU</span></a>
+                </div>
+             <!--- nav links --->
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul id="nav-list" class="nav navbar-nav">
+                        <li><a href="work.html">WORKS</a></li>
+                        <li><a href="CV.pdf">CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <!--- end of navbar --->
+        
+        <!--- start of article --->
+        
+        <div id="start" class="article">
+        
+            <h1>ND Handshaking Event Design</h1>
+            
+            <h3>Product and Event Service Design</h3>
+            
+            <!---This area is the slideshow for mobile display--->
+            <div class="w3-content w3-display-container hidden-sm hidden-md hidden-lg">
+                <img class="slides" src="image/taiwanrailway/TR%20home.jpg"/>
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                </div>
+                <p class="caption">Original design of TR Website</p>
+            </div>
+            <!------>
+            
+            <p>
+            <figure>
+                    <img id="NDposter" class="a-img floatright" src="image/NDred/poster.jpg" />
+                    <figcaption class="floatright">Figure 1. Exhibition Poster</figcaption>
+            </figure>
+            </p>
+            
+            <p>
+            ND, which stands for NetDragon, is a company that I interned in 2017 summer in Fuzhou, China. During the summer internship, one of the projects is to design a red envelope for 2019. It will be delivered to outperforming employees in a handshaking event where CEO and other high managers would shake hands with them to express their gratitude. Beyond designing a red envelope, our mission also includes improving the event experience. The team consists of three people.
+            </p>
+            
+            <h3>Interviews</h3>
+            
+            <p>In order to fully understand the event itself and participants’ overall experience. We interviewed three past participants, including one new employee, one S performance employee and one event organizer.</p>
+            
+            <h3>Customer Journey Map</h3>
+            
+            <p>Basing on the interview feedback, we synthesized the data and came up with a customer journey map to show users experience with their emotion fluctuation as well as their painpoints and touchpoints through the process. 
+            In this map, we discovered two major low moments in the experience:
+            </p>
+            
+            <ol>
+                <li>Unclear communication prior to the event makes participants feel confused about the event procedure</li>
+                <li>Long queuing time that makes users feel bored before they entered the event venue.</li>
+            </ol>   
+            
+            <p>Aside from the two low moments, what’s interesting is that we also found that there was <b>a sense of emptiness</b> after the event due to an abrupt end of the event that kind of stops the high emotion in the experience.</p>
+                       
+            <p>
+            <figure>
+                    <img id="NDCJM" class="a-img centered" src="image/NDred/CJM_.jpg" />
+                    <figcaption>Figure 2. Customer Journey Map</figcaption>
+            </figure>
+            </p>
+                        
+            <h3>Touchpoints &amp; Design Direction</h3>
+            
+            <p>
+            In this map, we also discussed about the touchpoints through the experience that includes not only physical materials but also electronic media. And because of the purpose of this project is to design a red envelope, we kept reminding ourselves that the red envelope should be our most important touchpoint.
+            </p>
+            
+            <p>So basing on that and our findings in the customer journey map, we set our design direction as <em>using red envelop as a medium to connect each part of the experience</em> and to</p>
+               <ol>
+                <li>build up anticipation for the event,</li>
+                <li>solve boredom while queuing and</li>
+                <li>create post-experience after the event.</li>
+               </ol>
+            
+            
+            <p>
+            <figure>
+                    <img id="NDbrainstorming" class="a-img floatright" src="image/NDred/brainstroming.jpg" />
+                    <figcaption class="floatright">Figure 3. Brainstorming</figcaption>
+            </figure>
+            </p>
+            
+            <h3>Brainstorming</h3>
+            
+            <p>With our design direction, we started the brainstorming session. During the session, we came up with several keywords as a starting point. These keywords are ‘functionality’, ‘reusability’, ‘customization’, ‘no low moment’, ‘anticipation’, ‘surprise’ and ‘engagement’.</p>
+            
+            <p>And finally, we came up with our solution – Avatar Pig.</p>
+            
+            <h3>Solution</h3>
+            
+            <p>So our solution starts from sending out a physical invitation with a QR code to the outperforming employees. The QR code inside links to a special section of the company’s app for event details. Through physical invitation, it gives participants sense of surprise, compared to solely using an online notification. Besides, the QR code helps participants understand event details more easily and quickly.</p>
+            
+            <p>
+                <figure id="NDscreen">
+                    <img class="NDscreen a-img" src="image/NDred/Avatar%20(1).png" />
+                    <img class="NDscreen a-img" src="image/NDred/Avatar%20(4).png" />
+                    <img class="NDscreen a-img" src="image/NDred/Avatar%20(2).png" />
+                    <img class="NDscreen a-img" src="image/NDred/Avatar%20(3).png" />
+                    <figcaption>Figure 4. Mobile section within company's app </figcaption>
+            </figure>
+            </p>
+            
+            <p>On the event day, a new section in the QR code page would be unlocked, where participants can play an avatar pig game. In this game, participants can customize their avatar pig with various combinations of parts and colors. And it solves the boredom while queueing.</p>
+            
+            <p>During the event, participants would receive the envelope that looks like a bag with strange metal applications, which would confuse them for a while. However, as soon as they step out the event venue, they would receive another package that contains different parts of the pig. When they put all the pieces together, it becomes the pig they’ve just customized right before the event. And it brings more surprises to participants and extends the experience after the event itself.</p>
+            
+            <p>And before long, participants would also discover that actually the envelope is made up with several small pockets with good functionalities. It can be a useful item even after the festival.</p>
+            
+            <p>
+            <figure>
+                    <img id="NDjourney" class="a-img centered" src="image/NDred/NDuserjourney.png" />
+                    <figcaption>Figure 5. User Journey</figcaption>
+            </figure>
+            </p>
+            
+            <h3>Recap &amp; Reflection</h3>
+            <p>In this project, our team design a red envelope and improve the event experience. Through this project I learned a lot about the service design methods and gained a great sense of achievement through the research and analysis of the event experience. It makes me more fond of the field of user experience.
+            </p>
+            
+            <a href="#navbar"><button id="top-btn">Back to Top</button></a>
+            <a href="index.html"><button id="back-btn">Back to Homepage</button></a>
+            
+            
+
+        </div>        
+        
+        <!--- end of article --->
+        
+        <!--- start of footer --->
+        <footer class="container-fluid" id="footer" >
+            <div class="row">
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>Contact</h4>
+                    <p>Email: b02106020@ntu.edu.tw</p>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>Location</h4>
+                    <p>Taipei, Taiwan</p>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-12 footerinfo">
+                    <h4>　</h4>
+                    <p id="loyalty">@2017 Adam Yu Tzu Hsien</p>
+                </div>
+                
+            </div>
+        </footer>
+        <!--- end of footer --->
+    </body>
+</html>
